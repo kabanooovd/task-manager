@@ -1,0 +1,14 @@
+.container {
+    display: flex;
+
+    div {
+        cursor: pointer;
+        padding: 24px;
+        font-size: 18px;
+        transition: all 0.5s;
+    }
+
+    div:hover {
+        background-color: rgb(31, 31, 31);
+    }
+}

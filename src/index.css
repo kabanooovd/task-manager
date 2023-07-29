@@ -1,10 +1,23 @@
+:root {
+    /* colors */
+    --main-app-color: #ff7300;
+    --main-bg-color: #353535;
+    --main-text-color: #e2e2e2;
+    --header-bg-color: #2c2c2c;
+
+    /* sizes */
+    --header-height: 70px;
+
+}
+
 html, body {
     margin: 0;
     font-family: Roboto;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     box-sizing: border-box;
-    background-color: #FFFFFF;
+    background-color: var(--main-bg-color);
+    color: var(--main-text-color);
     scroll-behavior: smooth;
   }
   
