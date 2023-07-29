@@ -1,0 +1,15 @@
+{
+  "name": "time-manager",
+  "version": "1.0.0",
+  "description": "app for time manage",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "dkabanov",
+  "license": "ISC",
+  "dependencies": {
+    "@types/react": "^18.2.17",
+    "react": "^18.2.0"
+  }
+}
