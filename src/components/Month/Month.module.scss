@@ -1,3 +1,68 @@
 .container {
-    border: 1px solid green;
+    .yearsWrapper {
+        padding: 0 12px;
+        height: 45px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        span {
+            font-size: 28px;
+            font-weight: 800;
+        }
+
+        span:nth-child(1) {
+            color: var(--main-app-color);
+        }
+    }
+
+    .weekDaysWrapper {
+        padding: 0 6px;
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        height: 25px;
+
+        div {
+            font-size: 16px;
+        }
+    }
+
+    .daysWrapper {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        height: calc(100vh - var(--header-height) - 70px);
+
+        .prevDay {
+            padding: 6px;
+            border-top: 1px solid var(--dark_border-divider);
+            border-right: 1px solid var(--dark_border-divider);
+            background-color: #3a3a3a;
+        }
+
+        .currentDay {
+            padding: 6px;
+            border-top: 1px solid var(--dark_border-divider);
+            border-right: 1px solid var(--dark_border-divider);
+            cursor: pointer;
+            transition: all 0.3s;
+
+            &:hover {
+                background-color: #444444;
+            }
+        }
+
+        .currentToday {
+            background-color: var(--main-app-color);
+            opacity: 0.4;
+        }
+
+        .nextDay {
+            padding: 6px;
+            border-top: 1px solid var(--dark_border-divider);
+            border-right: 1px solid var(--dark_border-divider);
+            background-color: #3a3a3a;
+        }
+
+
+    }
 }

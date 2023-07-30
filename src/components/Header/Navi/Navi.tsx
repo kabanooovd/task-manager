@@ -11,10 +11,7 @@ export const Navi: React.FC<{
     return (
         <nav className={s.container}>
             {naviConfig.map(({ id, mode }) => {
-                const naviClassname = classNames(
-                    s.navi,
-                    appMode === mode ? s.activeNavi : s.regularNavi
-                )
+                const naviClassname = classNames(s.navi, appMode === mode ? s.activeNavi : s.regularNavi)
                 return (
                     <div className={naviClassname} key={id} onClick={() => onSetMode(mode)}>
                         {mode}

@@ -4,6 +4,7 @@
     --main-bg-color: #353535;
     --main-text-color: #e2e2e2;
     --header-bg-color: #2c2c2c;
+    --dark_border-divider: #2c2c2c;
 
     /* sizes */
     --header-height: 70px;
@@ -12,7 +13,7 @@
 
 html, body {
     margin: 0;
-    font-family: Roboto;
+    font-family: ubuntu;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     box-sizing: border-box;
