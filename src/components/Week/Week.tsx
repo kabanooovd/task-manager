@@ -1,7 +1,10 @@
-import s from "./Week.module.scss"
+import { ModeWrapper } from '../ModeWrapper/ModeWrapper'
+import s from './Week.module.scss'
 
 export const Week = () => {
-    return <div className={s.container}>
-        WEEK
-    </div>
+    return (
+        <ModeWrapper>
+            <div className={s.container}>Week</div>
+        </ModeWrapper>
+    )
 }

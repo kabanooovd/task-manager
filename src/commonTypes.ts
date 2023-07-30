@@ -1,3 +1,4 @@
+export type ToperationOption = "prev" | "next";
 export type TAppMode = "week" | "month" | "year"
 
 export interface INavi {
