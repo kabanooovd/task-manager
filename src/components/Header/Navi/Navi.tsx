@@ -2,6 +2,7 @@ import classNames from 'classnames'
 import { TAppMode } from '../../../commonTypes'
 import { naviConfig } from '../../../config'
 import s from './Navi.module.scss'
+import { Icon } from '../../Icon/Icon'
 
 export const Navi: React.FC<{
     appMode: TAppMode
@@ -10,11 +11,12 @@ export const Navi: React.FC<{
     const { onSetMode, appMode } = props
     return (
         <nav className={s.container}>
-            {naviConfig.map(({ id, mode }) => {
+            {naviConfig.map(({ id, mode, iconName }) => {
                 const naviClassname = classNames(s.navi, appMode === mode ? s.activeNavi : s.regularNavi)
                 return (
                     <div className={naviClassname} key={id} onClick={() => onSetMode(mode)}>
-                        {mode}
+                        <Icon iconName={iconName} />
+                        <span>{mode}</span>
                     </div>
                 )
             })}

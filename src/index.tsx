@@ -1,11 +1,11 @@
-import "./index.css";
+import './index.css'
 import { Root } from './Root'
 
-import { createRoot } from "react-dom/client";
+import { createRoot } from 'react-dom/client'
 
-const root = document.getElementById("root");
+const root = document.getElementById('root')
 
 if (root) {
-    const reactRoot = createRoot(root);
-    reactRoot.render(<Root />);
+    const reactRoot = createRoot(root)
+    reactRoot.render(<Root />)
 }

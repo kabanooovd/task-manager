@@ -8,4 +8,22 @@
     padding: 0 10px;
     position: fixed;
     top: 0;
+
+    .leftStideWrapper {
+        display: flex;
+        gap: 0;
+        align-items: center;
+        gap: 10px;
+
+        .nextPrev {
+            display: flex;
+            div {
+                cursor: pointer;
+            }
+        }
+    }
+
+    .rightStideWrapper {
+        cursor: pointer;
+    }
 }

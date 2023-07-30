@@ -2,10 +2,18 @@
     display: flex;
 
     .navi {
+        display: flex;
+        align-items: center;
         cursor: pointer;
-        padding: 24px;
+        padding: 14px;
         font-size: 18px;
         transition: all 0.5s;
+
+        span {
+            font-size: 20px;
+            font-weight: 800;
+        }
+
         &:hover {
             background-color: rgb(31, 31, 31);
         }
@@ -16,5 +24,6 @@
 
     .activeNavi {
         background-color: rgb(31, 31, 31);
+        color: var(--main-app-color);
     }
 }
