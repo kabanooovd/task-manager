@@ -9,15 +9,12 @@
         &:hover {
             background-color: rgb(31, 31, 31);
         }
-
-        .regularNavi {
-            background-color: none;
-        }
-    
-        .activeNavi {
-            background-color: rgb(31, 31, 31);
-        }
+    }
+    .regularNavi {
+        background-color: none;
     }
 
-
+    .activeNavi {
+        background-color: rgb(31, 31, 31);
+    }
 }
