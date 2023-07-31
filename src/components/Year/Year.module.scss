@@ -1,3 +1,64 @@
 .container {
-    border: 1px solid yellow;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: 1fr;
+    height: calc(100vh - var(--header-height));
+
+    .months {
+        border: 1px solid white;
+        grid-area: 1 / 1 / 2 / 10;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+
+        .calendar__wrapper {
+            border: 1px solid red;
+            padding: 10px 40px;
+
+            .calendar {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                .calendar__header {
+                    color: red;
+                }
+
+                .calendar_days__wrapper {
+                    color: yellowgreen;
+
+                    display: grid;
+                    grid-template-columns: repeat(7, 1fr);
+                    gap: 5px;
+                    place-self: center;
+                    border: 1px solid blue;
+                    width: 330px;
+
+                    .day_grid__wrapper {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        .day {
+                            border: 1px solid green;
+                            width: 40px;
+                            height: 40px;
+                            border-radius: 50%;
+
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .sideBar {
+        border: 1px solid blue;
+        grid-area: 1 / 10 / 2 / 11;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }

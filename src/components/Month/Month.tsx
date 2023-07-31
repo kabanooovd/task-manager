@@ -14,6 +14,7 @@ export const Month: React.FC<{
 }> = (props) => {
     const { currentDate, monthsDays, prevMonthDays, nextMonthDays, currnetMonth, currentYear } = props
     const weekDays = Object.values(WEEK_DAYS_RUS_MAPPER)
+    // console.log(monthsDays)
     return (
         <ModeWrapper>
             <div className={s.container}>

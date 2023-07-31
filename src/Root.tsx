@@ -5,7 +5,7 @@ import moment from 'moment'
 import { onGetDaysInMonth, onGetOtherMonthDays } from './utils'
 
 export const Root = () => {
-    const [appMode, setAppMode] = React.useState<TAppMode>('Month')
+    const [appMode, setAppMode] = React.useState<TAppMode>('Year')
 
     const currentDate = moment(new Date()).locale('ru')
     const initialMonth = currentDate.month()
@@ -40,7 +40,9 @@ export const Root = () => {
                     currentYear={currentYear}
                 />
             )}
-            {appMode === 'Year' && <Year />}
+            {appMode === 'Year' && <Year 
+                currentYear={currentYear}
+            />}
         </>
     )
 }
