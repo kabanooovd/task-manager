@@ -5,47 +5,56 @@
     height: calc(100vh - var(--header-height));
 
     .months {
-        border: 1px solid white;
+        margin-top: 50px;
         grid-area: 1 / 1 / 2 / 10;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
 
         .calendar__wrapper {
-            border: 1px solid red;
-            padding: 10px 40px;
-
             .calendar {
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
                 .calendar__header {
-                    color: red;
+                    span {
+                        font-weight: 600;
+                        color: var(--main-app-color);
+                    }
                 }
 
                 .calendar_days__wrapper {
-                    color: yellowgreen;
-
+                    border-top: 1px solid grey;
                     display: grid;
                     grid-template-columns: repeat(7, 1fr);
                     gap: 5px;
                     place-self: center;
-                    border: 1px solid blue;
-                    width: 330px;
+                    width: 184px;
 
                     .day_grid__wrapper {
                         display: flex;
                         justify-content: center;
                         align-items: center;
                         .day {
-                            border: 1px solid green;
-                            width: 40px;
-                            height: 40px;
-                            border-radius: 50%;
-
+                            cursor: pointer;
+                            width: 20px;
+                            height: 20px;
                             display: flex;
                             justify-content: center;
                             align-items: center;
+                            border-radius: 50%;
+                            transition: all 0.5s;
+
+                            &:hover {
+                                background-color: #979797;
+                                color: #3a3a3a;
+                            }
+                        }
+                        .dayWe {
+                            color: grey;
+                        }
+                        .dayTd {
+                            background-color: black;
                         }
                     }
                 }
@@ -54,11 +63,12 @@
     }
 
     .sideBar {
-        border: 1px solid blue;
         grid-area: 1 / 10 / 2 / 11;
 
         display: flex;
         justify-content: center;
         align-items: center;
+
+        box-shadow: -28px 0px 28px -5px rgba(0,0,0,0.1);
     }
 }
