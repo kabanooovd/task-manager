@@ -1,0 +1,23 @@
+.container {
+
+    .day {
+        color: #a0a0a0;
+        font-size: 12px;
+    }
+
+    .date {
+        font-size: 28px;
+    }
+
+    .currentDay {
+        color: var(--main-app-color);
+        font-size: 12px;
+    }
+
+    .currentDate {
+        color: var(--main-app-color);
+        font-size: 28px;
+    }
+
+
+}

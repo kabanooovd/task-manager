@@ -30,7 +30,7 @@ export const Root = () => {
     return (
         <>
             <Header appMode={appMode} setAppMode={setAppMode} />
-            {appMode === 'Week' && <Week currentWeek={currentWeek} />}
+            {appMode === 'Week' && <Week currentWeek={currentWeek} currentDate={currentDate} />}
             {appMode === 'Month' && (
                 <Month
                     currentDate={currentDate}

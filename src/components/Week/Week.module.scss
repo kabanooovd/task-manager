@@ -3,43 +3,27 @@
     grid-template-columns: repeat(36, 1fr);
 
     .div0 {
-        border: 1px solid red;
-
         grid-area: 1 / 1 / 2 / 2;
     }
     .div1 {
-        border: 1px solid red;
-
         grid-area: 1 / 2 / 2 / 7;
     }
     .div2 {
-        border: 1px solid red;
-
         grid-area: 1 / 7 / 2 / 12;
     }
     .div3 {
-        border: 1px solid red;
-
         grid-area: 1 / 12 / 2 / 17;
     }
     .div4 {
-        border: 1px solid red;
-
         grid-area: 1 / 17 / 2 / 22;
     }
     .div5 {
-        border: 1px solid red;
-
         grid-area: 1 / 22 / 2 / 27;
     }
     .div6 {
-        border: 1px solid red;
-
         grid-area: 1 / 27 / 2 / 32;
     }
     .div7 {
-        border: 1px solid red;
-
         grid-area: 1 / 32 / 2 / 37;
     }
 }
